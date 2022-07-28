@@ -1,0 +1,95 @@
+<%- include('partials/header') %>
+
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+  <div id = "cardRegistration" class="card shadow-5" style="width: 30rem; height: 30rem;">
+    <form method="post" autocomplete="on">
+
+      <div class="signuptitle">
+        <h2> REGISTER </h2>
+      </div>
+      <!--First name-->
+      <div class="box">
+        <label for="firstName" class="fl fontLabel"> First Name: </label>
+        <div class="new iconBox">
+        </div>
+        <div class="fr">
+          <input type="text" name="firstName" placeholder="First Name" class="textBox" autofocus="on" required />
+        </div>
+        <div class="clr"></div>
+      </div>
+      <!--First name-->
+
+
+      <!--Second name-->
+      <div class="box">
+        <label for="secondName" class="fl fontLabel"> Second Name: </label>
+        <div class="fl iconBox"></div>
+        <div class="fr">
+          <input type="text" required name="secondName" placeholder="Last Name" class="textBox" />
+        </div>
+        <div class="clr"></div>
+      </div>
+      
+      <!--Second name--> 
+
+
+
+      
+      <!---Email ID----> 
+      <div class="box">
+        <label for="email" class="fl fontLabel">Email : </label>
+        <div class="fl iconBox"></div>
+        <div class="fr">
+          <input type="email" class="textBox" placeholder="@gmail.com" name="username">
+        </div>
+        <div class="clr"></div>
+      </div>
+      
+      <!--Email ID-----> 
+
+
+      
+      <!---Password------> 
+      <div class="box">
+        <label for="password" class="fl fontLabel"> Password : </label>
+        <div class="fl iconBox"></div>
+        <div class="fr">
+          <input type="password" class="textBox" placeholder="********"  name="password">
+        </div>
+        <div class="clr"></div>
+      </div>
+      
+      <!---Password----> 
+
+      
+      <!---Gender-----> 
+      <div class="box radio">
+        <label for="gender" class="fl fontLabel"> Gender: </label>
+        <input type="radio" name="Gender" value="Male" required /> Male
+        <input type="radio" name="Gender" value="Female" required /> Female
+        <input type="radio" name="Gender" value="Female" required /> Other
+      </div>
+     
+      <!---Gender--->
+
+     
+      <!---Submit Button------> 
+      <div class="box">
+        <button type="submit" class="btn btn-warning">Register</button>
+      </div>
+
+      
+      <!---Submit Button-----> 
+
+      <div id= "googlebtn" class="card-body">
+        <a class="btn btn-block btn-warning btn-social btn-google" href="/auth/google" role="button">
+          <i class="fab fa-google"></i>
+          Sign Up with Google
+        </a>
+      </div>
+    </form>
+  </div>
+
+  <%- include('partials/header') %>
